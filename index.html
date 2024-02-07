@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Form</title>
+    <style>
+        body {
+            font-family: Arial;
+            margin: 20px;
+            background-color: green; 
+        }
+        form h2 {
+            text-align: center;
+
+        }
+        form h3 {
+            text-align: center;  
+        }
+        form h4{
+            font-family: Calibre;
+        }
+        form {
+            max-width: 700px;
+            margin: 0 auto;
+            background-color: lightgreen;
+            
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 0px;
+            box-sizing: border-box;
+        }
+        button {
+            background-color:green;
+            color:lightgreen;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 16px;
+            
+        }
+        .button-container {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <form>
+        <h2>Simple Resume Form</h2>
+        <h3>Personal Information</h3>
+
+        <!-- Personal Information -->
+        <label for="fullName"><h4>Full Name:</h4></label>
+        <input type="text" id="fullName" name="fullName" required>
+
+        <label for="email"><h4>Email:</h4></label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone"><h4>Phone:</h4></label>
+        <input type="tel" id="phone" name="phone">
+
+        <label for="gender"><h4>Gender:</h4></label>
+        <input type="gender" id="gender" name="gender" required>
+
+        <!-- Education -->
+        <h3>Educational Background</h3>
+
+        <label for="elem"><h4>Elementary School:</h4></label>
+        <input type="text" id="elem" name="elem">
+
+        <label for="high"><h4>High School:</h4></label>
+        <input type="text" id="high" name="high">
+
+        <label for="college"><h4>College:</h4></label>
+        <input type="text" id="college" name="college">
+
+        <!-- Work Experience -->
+        <h3>Work Experience</h3>
+
+        <label for="jobTitle"><h4>Job Title:</h4></label>
+        <input type="text" id="jobTitle" name="jobTitle">
+
+        <label for="company"><h4>Company:</h4></label>
+        <input type="text" id="company" name="company">
+
+        <label for="employmentYear"><h4>Employment Year:</h4></label>
+        <input type="text" id="employmentYear" name="employmentYear">
+
+        <!-- Save/Submit Button (without actual functionality) -->
+        <div class="button-container">
+            <button type="button">Save/Submit</button>
+        </div>
+    </form>
+
+</body>
+</html>
